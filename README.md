@@ -12,7 +12,7 @@ Run clang-format in parallel over entire directory trees.
 run-clang-format src/
 ```
 
-Use `-i` flag to apply formatting in-place instead of showing diffs.
+Use `-i` flag to apply formatting in-place instead of showing diffs
 
 ## Getting Started
 
@@ -41,6 +41,8 @@ Control parallelism (default uses all CPU cores):
 ```bash
 run-clang-format -j 4 src/
 ```
+
+For more information use `--help` (`-h`) flag.
 
 ## License
 
