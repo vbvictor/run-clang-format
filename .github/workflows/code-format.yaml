@@ -1,0 +1,21 @@
+name: Code formatter
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  python-black-formatter:
+    timeout-minutes: 10
+    runs-on: ubuntu-24.04
+    name: python-formatter
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+      - uses: psf/black@782e5605c86aab56be6f905da10dcd3e463fd9c2 # 25.12.0

@@ -51,10 +51,10 @@ dev = [
 ]
 
 [project.scripts]
-run-clang-format = "run-clang-format:main"
+run-clang-format = "run_clang_format:main"
 
 [tool.setuptools]
-py-modules = ["run-clang-format"]
+py-modules = ["run_clang_format"]
 
 [tool.ruff]
 # Ignore line length rules (E501) - using black for formatting
