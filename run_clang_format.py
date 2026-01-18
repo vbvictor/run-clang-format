@@ -307,8 +307,13 @@ async def main() -> None:
     sys.exit(returncode)
 
 
-if __name__ == "__main__":
+def cli() -> None:
+    """Entry point for the CLI."""
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
         pass
+
+
+if __name__ == "__main__":
+    cli()
