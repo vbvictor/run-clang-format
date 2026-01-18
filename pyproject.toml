@@ -52,7 +52,7 @@ dev = [
 ]
 
 [project.scripts]
-run-clang-format = "run_clang_format:main"
+run-clang-format = "run_clang_format:cli"
 
 [tool.setuptools]
 py-modules = ["run_clang_format"]
